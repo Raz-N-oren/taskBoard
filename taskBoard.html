@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="taskBoard.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task-Board</title>
+</head>
+
+<body>
+    <div class="errors-and-notebook">
+        <div id="errors-div">
+            <!-- <p  id="errors-paragraph"></p> -->
+        </div>
+
+        <div class="note-book">
+            <img id="title" src="pictures/title.png">
+            <input id="title-input" type="text" placeholder="Title" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Title'" maxlength="12">
+            <textarea id="note-book-text" placeholder="Fill your text here"
+                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Fill your text here'"></textarea>
+            <input type="date" id="date" max="2029-12-31">
+            <input type="time" id="time">
+            <button id="save-button" onclick="onCreateNoteClicked()"> <strong>Save</strong> </button>
+            <button id="reset-button" onclick="onResetNoteClicked()"> <strong>Reset</strong> </button>
+
+        </div>
+
+    </div>
+    <div  id="notes">
+        <!-- <div class="note" id="note-div1">
+            <img src="pictures/resizedNote.png">
+            <p id="note-title">hey barak</p>
+            <p id="note-text">asdasd</p>
+            <p id="note-date" id="">2017-29-06</p>
+            <p id="note-time">16:50</p>
+            <button type="button"  onclick="onEraseNoteClicked(this)" class="remove-note" aria-label="Left Align">
+                <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+            </button>
+
+        </div> -->
+    <script src="taskBoard.js"></script>
+</body>
+
+</html>

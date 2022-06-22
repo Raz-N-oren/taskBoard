@@ -1,0 +1,257 @@
+body{
+  background-image:url(pictures/wallPeper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.errors-and-notebook{
+  margin: 0 auto;
+  width: 506px;
+  margin-top: -190px;
+}
+
+#errors-div{
+    position: relative;
+    top: 308px;
+    left: -390px;
+    font-size: 15px;
+    font-weight: 600;
+    border-style: solid;
+    width: 100%;
+    height: 151px;
+    padding: 7px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    margin: 15px -30px;
+    display: inline-block;
+}
+
+#errors-paragraph{
+    left: 56px;
+    color: black;
+    padding: 3px;
+    background-color: red;
+    white-space: nowrap;
+    opacity: 0.8;
+    position: absolute;
+}
+
+p{
+    display: inline-block;
+}
+
+.note-book{
+    height: 380px;
+    width: 506px;
+    background-image: url(pictures/sandNote_520x380.jpeg);
+    background-repeat: no-repeat;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    border-radius: 10%;
+    box-shadow: 0px 0px 12px 8px #b8860b73;
+    
+}
+
+.note-book textarea{
+    position: absolute;
+    top: 165px;
+    left: 130px;
+    width: 48%;
+    height: 28%;
+    background-color: transparent;
+    border: none;
+    resize: none;
+    outline: none;
+    font-size: 15px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 10px;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(14, 70, 143);
+  }
+
+#date{
+    background: transparent;
+    border: none;
+    top: 279px;
+    position: absolute;
+    left: 140px;
+    font-size: 14px;
+    font-weight: 900
+}
+
+#time{
+    background: transparent;
+    border: none;
+    top: 279px;
+    position: absolute;
+    left: 295px;
+    font-size: 14px;    
+    font-weight: 900
+}
+
+#save-button{
+    background-color: #ffe2ce;
+    top: 335px;
+    position: absolute;
+    left: 190px;
+    font-size: 14px;    
+}
+
+#reset-button{
+    background-color: #ffe2ce;
+    top: 335px;
+    position: absolute;
+    left: 250px;
+    font-size: 14px; 
+}
+#reset-button:hover{
+    background: white;
+}
+
+#save-button:hover{
+    background: white;
+}
+
+#title{
+    left: 105px;
+    top: 11px;
+    position: absolute;
+}
+
+#title-input{
+    left: 175px;
+    top: 130px;
+    position: absolute;
+    background: transparent;
+    width: 170px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: underline;
+    font-weight: 900
+}
+
+#notes{
+    margin: 0 auto;
+    width: 1229px;
+}
+
+.note{
+    position: relative;
+    display: inline-block;
+    margin: 15px 25px;
+    box-sizing: border-box;
+    opacity: 0.8;
+}
+
+.remove-note{
+    position: absolute;
+    top: 78px;
+    left: 213px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    opacity: 0;
+}
+
+
+.note:hover .remove-note{
+    opacity: 1;
+}
+
+#note-title{
+    position: absolute;
+    left: 25px;
+    top: 74px;
+    font-size: 19px;
+    text-decoration: underline;
+    font-weight: 900;
+    text-align: center;
+    width: 190px;
+    white-space: nowrap;
+}
+
+#note-text{
+    position: absolute;
+    left: 24px;
+    top: 101px;
+    font-size: 15px;
+    width: 210px;
+    height: 67px;
+    word-wrap: break-word;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+#note-date{
+    position: absolute;
+    left: 36px;
+    top: 172px;
+    font-size: 15px;
+    font-weight: 900;
+    width: 104px;
+    height: 25px;
+    white-space: nowrap;
+    text-align: center;
+
+}
+
+#note-time{
+    position: absolute;
+    left: 140px;
+    top: 172px;
+    font-size: 15px;
+    font-weight: 900;
+    width: 72px;
+    height: 25px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.note {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
+}
+
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.8; }
+}
+
+
+.my-note:hover {
+    transform: scale(1.18);
+    opacity: 1;
+}
