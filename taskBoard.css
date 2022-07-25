@@ -200,8 +200,8 @@ p{
     font-size: 15px;
     width: 210px;
     height: 67px;
-    word-wrap: break-word;
     overflow-y: auto;
+    word-wrap: break-word;
     white-space: pre-wrap;
     text-align: left;
 }
